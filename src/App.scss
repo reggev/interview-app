@@ -13,6 +13,17 @@
   color: white;
 }
 
+.App-header > h1 {
+  margin: 0;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.App-header > p {
+  margin: 0;
+  font-size: 0.75em;
+}
+
 .figmaLink {
   color: white;
   margin-left: 1ch;
