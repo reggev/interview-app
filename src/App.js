@@ -1,23 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>interview</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Please follow the design using
+          <a
+            href="https://www.figma.com/file/3dffj71lUrFKcF7oUtJH0z/interview"
+            className="figmaLink">
+            this link to Figma
+          </a>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
