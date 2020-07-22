@@ -1,22 +1,17 @@
-import React from 'react';
-import './App.scss';
+import React from 'react'
+import './App.scss'
+
+import ErrorBoundary from './components/ErrorBoundary'
+import TaxCalculator from './components/TaxCalculator'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>[Taxes Ranges]</h1>
-        <p>
-          Please follow the design using
-          <a
-            href="https://www.figma.com/file/3dffj71lUrFKcF7oUtJH0z/interview"
-            className="figmaLink">
-            this link to Figma
-          </a>
-        </p>
-      </header>
-    </div>
-  );
+    <ErrorBoundary>
+      <div className="App">
+        <TaxCalculator />
+      </div>
+    </ErrorBoundary>
+  )
 }
 
-export default App;
+export default App
